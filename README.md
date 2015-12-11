@@ -20,10 +20,11 @@ A small library providing utility methods to generate USSD page for Myriade plat
           {href: "somepath/option_two", text: "Option two"}    
       ]
   };
-```
+
   
   console.log(builder.generateContentPage(options));
- 
+```
+
 ## Tests
 
 ```shell

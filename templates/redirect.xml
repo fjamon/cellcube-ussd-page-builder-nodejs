@@ -1,0 +1,7 @@
+module.exports = "<?xml version='1.0' encoding='UTF-8'?>" +
+"<!DOCTYPE pages SYSTEM 'cellflash.dtd'>" +
+"<pages descr='{descr}'>" +
+"<page count='{count}' volatile='{volatile}' ismenu='{ismenu}'>" +
+"<redirect src='erl://svc_core:change_service?file:{erl}'/>" +
+"</page>" +
+"</pages>";

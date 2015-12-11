@@ -1,0 +1,37 @@
+{
+  "name": "myriade-ussd-page-builder-node",
+  "version": "0.1.0",
+  "description": "A NodeJs module for generating USSD pages for Myriade's USSD platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fjamon/myriade-ussd-page-builder-node.git"
+  },
+  "keywords": [
+    "ussd",
+    "myriade",
+    "app"
+  ],
+  "author": "François Joseph AMON D'ABY <ange_amon@live.fr> (fj.amondaby.net)",
+  "license": "MIT",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/fjamon/myriade-ussd-page-builder-node/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/fjamon/myriade-ussd-page-builder-node/issues"
+  },
+  "homepage": "https://github.com/fjamon/myriade-ussd-page-builder-node#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {
+    "urlencode": "^1.1.0"
+  }
+}

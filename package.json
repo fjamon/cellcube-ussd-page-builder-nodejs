@@ -1,14 +1,14 @@
 {
-  "name": "myriade-ussd-page-builder-node",
-  "version": "1.0.0",
-  "description": "A NodeJs module for generating USSD pages for Myriade's USSD platform",
+  "name": "cellcube-ussd-page-builder-nodejs",
+  "version": "1.0.1",
+  "description": "A NodeJs module for generating USSD pages for Myriade's CellCube platform",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fjamon/myriade-ussd-page-builder-node.git"
+    "url": "git+https://github.com/fjamon/cellcube-ussd-page-builder-nodejs.git"
   },
   "keywords": [
     "ussd",
@@ -20,13 +20,13 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/fjamon/myriade-ussd-page-builder-node/blob/master/LICENSE"
+      "url": "https://github.com/fjamon/cellcube-ussd-page-builder-nodejs/blob/master/LICENSE"
     }
   ],
   "bugs": {
-    "url": "https://github.com/fjamon/myriade-ussd-page-builder-node/issues"
+    "url": "https://github.com/fjamon/cellcube-ussd-page-builder-nodejs/issues"
   },
-  "homepage": "https://github.com/fjamon/myriade-ussd-page-builder-node#readme",
+  "homepage": "https://github.com/fjamon/cellcube-ussd-page-builder-nodejs#readme",
   "devDependencies": {
     "chai": "^3.4.1",
     "mocha": "^2.3.4"

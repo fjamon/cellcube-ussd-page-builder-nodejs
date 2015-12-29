@@ -1,23 +1,23 @@
-Myriade USSD Page builder for nodeJs
+Myriade's CellCube USSD Page builder for nodeJs
 =========
 
-A small library providing utility methods to generate USSD page for Myriade platorm.
+A small library providing utility methods to generate USSD page for CellCube platorm.
 
 ## Installation
 
-  npm install myriade-ussd-page-builder-node --save
+  npm install cellcube-ussd-page-builder-nodejs --save
 
 ## Usage
   
  ```js
-  builder = require('myriade-ussd-page-builder-node');
+  builder = require('cellcube-ussd-page-builder-nodejs');
   
   var options = {
-      descr: "ussd-page-builder",
+      descr: "cellcube-ussd-page-builder-nodejs",
       content: "Page content goes there",
       links: [
-          {href: "somepath/option_one", text: "Option one"},            
-          {href: "somepath/option_two", text: "Option two"}    
+          {href: "path/option_one", text: "Option one"},            
+          {href: "path/option_two", text: "Option two"}    
       ]
   };
 
@@ -38,5 +38,5 @@ Add unit tests for any new or changed functionality. Lint and test your code.
 
 ## Release History
 
-* 1.0.0
-* 0.1.0 Initial release
+* 1.0.1 
+* 1.0.0 Initial release

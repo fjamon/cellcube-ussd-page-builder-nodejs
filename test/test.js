@@ -37,14 +37,14 @@ describe('#generateRedirectPage', function() {
 
 describe('#generateForm', function() {
   it('Generate an USSD form page. The kind of page that lets user input some value', function() {
-    var options = {
+    var options = {        
         descr: 'form',
         prompt: 'enter your name',
         var: "name",
         action: "askForPhone" 
     };      
-    var result = "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE pages SYSTEM 'cellflash.dtd'><pages descr='form'><page count='true' volatile='false' ismenu='true'><form action='askForPhone'><entry var='name' kind='digits'><prompt>enter your name<br/></prompt></entry></form></page></pages>";
-    generateForm(options).should.equal(result);
+    var result = "<?xml version='1.0' encoding='UTF-8'?><!DOCTYPE pages SYSTEM 'cellflash.dtd'><pages descr='form'><page count='true' volatile='false' ismenu='true'><form action='askForPhone'><entry var='name' kind='digits'><prompt>enter your name<br/></prompt></entry></form></page></pages>";    
+    console.log(generateForm(options)).should.equal(result);
   });
 
 });

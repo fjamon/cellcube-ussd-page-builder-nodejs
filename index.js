@@ -71,20 +71,12 @@ var generateContentPage = function(options){
 }
 
 var generateForm = function(options){
-    
+    console.log("jjj")
     if (!options)
         return this.getEmptyPage()
-        
-    /*
-    var options = {
-        descr: descr,
-        prompt: text,
-        var: "plateNumber",
-        action: "askForParkingZone?isOwnVehicle=" + isOwnVehicle                         
-    };
-    */
+    
     if (options.req){
-        options.action = options.action? options.action.split('?') : ""
+        options.action = options.action? options.action.split('?')[0] : ""
         var i = 0
         for(var param in options.req.query){
             if (i == 0){                
@@ -92,7 +84,7 @@ var generateForm = function(options){
             }
             else{
                 options.action += "&" + param + "=" + options.req.query[param]
-            }                            
+            }                                  
             i++
         }
     }

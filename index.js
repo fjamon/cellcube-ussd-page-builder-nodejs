@@ -71,7 +71,7 @@ var generateContentPage = function(options){
 }
 
 var generateForm = function(options){
-    console.log("jjj")
+    //console.log("jjj")
     if (!options)
         return this.getEmptyPage()
     
@@ -79,11 +79,13 @@ var generateForm = function(options){
         options.action = options.action? options.action.split('?')[0] : ""
         var i = 0
         for(var param in options.req.query){
-            if (i == 0){                
-                options.action += "?" + param + "=" + options.req.query[param]
+            if (i == 0){     
+                if (options.action.indexOf(options.req.query[param]) == -1)           
+                    options.action += "?" + param + "=" + options.req.query[param]
             }
             else{
-                options.action += "&" + param + "=" + options.req.query[param]
+                if (options.action.indexOf(options.req.query[param]) == -1)
+                    options.action += "&" + param + "=" + options.req.query[param]
             }                                  
             i++
         }
